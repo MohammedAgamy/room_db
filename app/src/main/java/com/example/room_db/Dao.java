@@ -17,6 +17,7 @@ public interface Dao {
     @Update
     void update(EntityModel entityModel);
 
+
     @Delete
     void delete(EntityModel entityModel);
 
