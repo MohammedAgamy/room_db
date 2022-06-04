@@ -1,5 +1,7 @@
 package com.example.room_db;
 
+import android.view.Display;
+
 import androidx.lifecycle.LiveData;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -11,20 +13,22 @@ import java.util.List;
 
 @androidx.room.Dao
 public interface Dao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insert(EntityModel entityModel);
+    @Insert
+    void insert(Model model);
 
     @Update
-    void update(EntityModel entityModel);
+    void update(Model model);
 
     @Delete
-    void delete(EntityModel entityModel);
+    void delete(Model model);
 
-    @Query("delete from entitymodel")
-    void deleteAll(EntityModel entityModel);
+    @SuppressWarnings("AndroidUnresolvedRoomSqlReference")
+    @Query("delete from newData")
+    void deleteAll();
 
-    @Query("SELECT * FROM entitymodel")
-    LiveData<List<EntityModel>> getAllData();
+    @SuppressWarnings("AndroidUnresolvedRoomSqlReference")
+    @Query("SELECT * FROM newData")
+    LiveData<List<Model>> getAllData();
 
 
 }

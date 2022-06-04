@@ -9,7 +9,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities = EntityModel.class, version = 1)
+@Database(entities = Model.class, version = 1)
 public abstract class RoomDb extends RoomDatabase {
 
     private static RoomDb roomDbInstance;
@@ -52,7 +52,10 @@ public abstract class RoomDb extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            //dao.insert(new EntityModel("","",""));
+            dao.insert(new Model("agamy", "agamy", "agamy"));
+            dao.insert(new Model("agamy", "agamy", "agamy"));
+            dao.insert(new Model("agamy", "agamy", "agamy"));
+
             return null;
         }
     }
