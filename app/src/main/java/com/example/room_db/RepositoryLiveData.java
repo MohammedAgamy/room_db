@@ -43,11 +43,8 @@ public class RepositoryLiveData {
     }
 
 
-
-
-    public static  class InsertAsyncTask extends AsyncTask<Model ,Void,Void>
-    {
-        private  Dao dao ;
+    public static class InsertAsyncTask extends AsyncTask<Model, Void, Void> {
+        private Dao dao;
 
         public InsertAsyncTask(Dao dao) {
             this.dao = dao;
@@ -60,9 +57,8 @@ public class RepositoryLiveData {
         }
     }
 
-    public static  class UpdateAsyncTask extends AsyncTask<Model ,Void,Void>
-    {
-        private  Dao dao ;
+    public static class UpdateAsyncTask extends AsyncTask<Model, Void, Void> {
+        private Dao dao;
 
         public UpdateAsyncTask(Dao dao) {
             this.dao = dao;
@@ -75,9 +71,8 @@ public class RepositoryLiveData {
         }
     }
 
-    public static  class DeleteAsyncTask extends AsyncTask<Model ,Void,Void>
-    {
-        private  Dao dao ;
+    public static class DeleteAsyncTask extends AsyncTask<Model, Void, Void> {
+        private Dao dao;
 
         public DeleteAsyncTask(Dao dao) {
             this.dao = dao;
@@ -90,9 +85,8 @@ public class RepositoryLiveData {
         }
     }
 
-    public static  class DeleteAllAsyncTask extends AsyncTask<Void ,Void,Void>
-    {
-        private  Dao dao ;
+    public static class DeleteAllAsyncTask extends AsyncTask<Void, Void, Void> {
+        private Dao dao;
 
         public DeleteAllAsyncTask(Dao dao) {
             this.dao = dao;
