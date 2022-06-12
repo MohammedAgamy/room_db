@@ -52,9 +52,9 @@ public abstract class RoomDb extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            dao.insert(new Model("agamy", "agamy", "agamy"));
-            dao.insert(new Model("agamy", "agamy", "agamy"));
-            dao.insert(new Model("agamy", "agamy", "agamy"));
+            dao.insert(new Model("agamy"));
+            dao.insert(new Model("agamy"));
+            dao.insert(new Model("agamy"));
 
             return null;
         }

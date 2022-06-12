@@ -11,17 +11,12 @@ public class Model {
     private int id;
     @ColumnInfo(name = "wordName")
     private String wordName;
-    @ColumnInfo(name = "wordMean")
-    private String wordMean;
-    @ColumnInfo(name = "wordType")
-    private String wordType;
 
-    public Model(String wordName, String wordMean, String wordType) {
+
+    public Model(String wordName) {
         this.wordName = wordName;
-        this.wordMean = wordMean;
-        this.wordType = wordType;
-    }
 
+    }
     public int getId() {
         return id;
     }
@@ -30,11 +25,8 @@ public class Model {
         return wordName;
     }
 
-    public String getWordMean() {
-        return wordMean;
-    }
 
-    public String getWordType() {
-        return wordType;
+    public void setId(int id) {
+        this.id = id;
     }
 }
