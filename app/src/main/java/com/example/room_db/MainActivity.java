@@ -19,9 +19,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     FloatingActionButton floatingActionButton;
-    AdapterWord adapterWord;
-    LiveMoelData liveMoelData;
-    List<Model> mList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,30 +31,6 @@ public class MainActivity extends AppCompatActivity {
     private void iniView() {
         recyclerView = findViewById(R.id.recycler);
         floatingActionButton = findViewById(R.id.addword);
-
-        mList = new ArrayList<>();
-
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, AddActivity.class));
-            }
-        });
-
-
-        adapterWord = new AdapterWord();
-        recyclerView.setAdapter(adapterWord);
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-        adapterWord.notifyDataSetChanged();
-
-        liveMoelData = new ViewModelProvider(this).get(LiveMoelData.class);
-        liveMoelData.getAllData().observe(this, new Observer<List<Model>>() {
-            @Override
-            public void onChanged(List<Model> models) {
-                //adapterWord.setWord(models);
-               // Toast.makeText(MainActivity.this, models.get(1).getWordName(), Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
 }
