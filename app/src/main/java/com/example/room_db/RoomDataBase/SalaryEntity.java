@@ -5,6 +5,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import java.util.Date;
 
@@ -13,6 +14,7 @@ import java.util.Date;
         , parentColumns = {"empId"}
         , childColumns = {"empId"}
         , onUpdate = ForeignKey.CASCADE, onDelete = ForeignKey.CASCADE)})
+@TypeConverters(DateConverter.class)
 public class SalaryEntity {
 
     @PrimaryKey(autoGenerate = true)
