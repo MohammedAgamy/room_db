@@ -29,4 +29,6 @@ public interface SalaryDao {
     @Query("select * from salaryTable Where empId=:empId and date>=:from and date <=:to order by date desc  ")
     LiveData<List<SalaryEntity>> getEmployeeSalary(long empId, Date from, Date to);
 
+    @Query("select sum(amount) from salaryTable  where empId=:empId")
+    Double getSalarySum(double empId);
 }

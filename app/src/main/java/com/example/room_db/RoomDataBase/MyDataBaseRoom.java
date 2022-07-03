@@ -12,9 +12,9 @@ import java.util.concurrent.Executors;
 @Database(entities = {EmployeeEntity.class}, version = 1, exportSchema = false)
 public abstract class MyDataBaseRoom extends RoomDatabase {
 
-    public abstract EmployeeEntity wordDao();
+    public abstract EmployeeDao employeeDao();
 
-    public abstract SalaryEntity salaryEntity();
+    public abstract SalaryDao salaryDao();
 
 
     private static volatile MyDataBaseRoom INSTANCE;
