@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout-land/item_word.xml" value="0.21781305114638447" />
-        <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout/activity_add.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout/activity_add.xml" value="0.25" />
+        <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout/activity_add_emp.xml" value="0.25" />
         <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout/activity_main.xml" value="0.25729166666666664" />
         <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout/item_word.xml" value="0.25" />
+        <entry key="..\:/Users/PanDa/AndroidStudioProjects/room_db/app/src/main/res/layout/view_data_item.xml" value="0.2734375" />
       </map>
     </option>
   </component>
